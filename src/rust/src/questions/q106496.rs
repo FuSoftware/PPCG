@@ -1,17 +1,16 @@
 /* Score rock-paper-scissors */
 
 pub fn test(){
-    println!("{}", q('R', 'R'));
-    println!("{}", q('R', 'P'));
-    println!("{}", q('R', 'S'));
-    println!("{}", q('P', 'R'));
-    println!("{}", q('P', 'P'));
-    println!("{}", q('P', 'S'));
-    println!("{}", q('S', 'R'));
-    println!("{}", q('S', 'P'));
-    println!("{}", q('S', 'S'));
+    println!("{}", r("Rock", "Rock"));
+    println!("{}", r("Rock", "Paper"));
+    println!("{}", r("Rock", "Scissors"));
+    println!("{}", r("Paper", "Rock"));
+    println!("{}", r("Paper", "Paper"));
+    println!("{}", r("Paper", "Scissors"));
+    println!("{}", r("Scissors", "Rock"));
+    println!("{}", r("Scissors", "Paper"));
+    println!("{}", r("Scissors", "Scissors"));
 }
 
-fn q(a:char, b:char)->i8{
-    b as i8 - a as i8
-}
+fn r(a:&str,b:&str)->i8{let p;if a.as_bytes()[0]+b.as_bytes()[0]==163{p=(b,a)}else{p=(a,b)}p.1.cmp(&p.0)as i8}
+fn q(a:&str,b:&str)->i8{let p=if a.as_bytes()[0]+b.as_bytes()[0]==163{(b,a)}else{(a,b)};p.1.cmp(&p.0)as i8}
