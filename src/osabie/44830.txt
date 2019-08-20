@@ -1,0 +1,10 @@
+SvyÇ2Bнð«?
+
+	S			//Split string
+	 v			//Loop on every character
+	  y			//Push current character to the stack
+	   Ç		//Get ASCII value of character
+		2B		//Convert to base 2
+		  н		//Convert from 1-element array to string
+		   ð«	//Append space
+		     ?	//Print with no newline

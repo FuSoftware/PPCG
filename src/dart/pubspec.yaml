@@ -1,0 +1,4 @@
+name: ppcg_174049
+description: https://codegolf.stackexchange.com/questions/174049/list-all-possible-titles-for-the-anno-games
+dependencies:
+  collection: ^1.14.11

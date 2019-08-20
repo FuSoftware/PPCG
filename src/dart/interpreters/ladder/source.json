@@ -1,0 +1,10 @@
+{
+    "variables":[
+        {"name":"BUTTON_IN", "type":"BOOL", "default":false}
+    ],
+    "program":{
+        "racks":[
+            
+        ]
+    }
+}

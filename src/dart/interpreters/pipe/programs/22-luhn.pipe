@@ -1,0 +1,16 @@
+¤╗╔═══╗
+╔!∑══╗║10
+∀╔══╗║%╝
+╚▥2╗▤╝║▭
+ ╚═⊗╝!╝
+ //
+Reverse the digits, make an array:
+    6, 1, 7, 8, 9, 3, 7, 2, 9, 9, 4
+Double the numbers in odd indexes:
+    6, 2, 7, 16, 9, 6, 7, 4, 9, 18, 4
+Sum the digits in each number:
+    6, 2, 7, 7, 9, 6, 7, 4, 9, 9, 4
+Sum all of the numbers:
+    6 + 2 + 7 + 7 + 9 + 6 + 7 + 4 + 9 + 9 + 4 = 70
+If the sum modulo 10 is 0, then the number is valid:
+    70 % 10 = 0 => valid

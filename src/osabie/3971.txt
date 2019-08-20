@@ -1,0 +1,59 @@
+I26BÇvžny49-UX26›Xi8-U}è?
+I26B1+Çvžny48-UXX25›i7-}1-è?
+
+IU[				//Store Input in X
+	X26%V		//Store X % 26 in Y
+	X26÷U		//Store X // 26 in X
+	Y<d_		//Push Y == 0
+	i			//If Y <> 0
+		X1-U	//Pushes Y-1
+	}
+	Y
+	žnè,
+	Xd_#
+	
+I1+U[				
+	X26%V		
+	X26÷U		
+	Y<d_		
+	i			
+		X1-U
+		26V	
+	}
+	Y1-WY
+	žnè
+	X<d_#
+]
+)RJ
+
+Pseudocode
+n = input();
+do{
+	m = n % 26; // Find remainder 
+	n = n / 26;
+	if(m <= 0){ // If remainder is 0, then a 'Z' must be there in output 
+		n = n-1;
+	}
+	print(letter(m));
+} while (n > 0)
+
+
+while (n>0) 
+{ 
+	// Find remainder 
+	int rem = n%26; 
+
+	// If remainder is 0, then a 'Z' must be there in output 
+	if (rem==0) 
+	{ 
+		str[i++] = 'Z'; 
+		n = (n/26)-1; 
+	} 
+	else // If remainder is non-zero 
+	{ 
+		str[i++] = (rem-1) + 'A'; 
+		n = n/26; 
+	} 
+} 
+// Reverse the string and print result 
+reverse(str, str + strlen(str)); 
