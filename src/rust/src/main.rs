@@ -1,6 +1,6 @@
 mod questions;
 
-use questions::q106496::*;
+use questions::q125282::*;
 
 fn main() {
     test();
