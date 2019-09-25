@@ -1,0 +1,2 @@
+equals(mod(sum(sum_digits(odd_double(reverse(input)))),10),0)
+R_sS10%0=
